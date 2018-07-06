@@ -4,12 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="16dp"
-    android:id="@+id/cv_item_crypto">
+    android:id="@+id/cv_item_crypto"
+    app:cardElevation="3dp"
+    android:layout_marginTop="5dp">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/cl_item_crypto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="5dp">
 
 
         <TextView
@@ -17,7 +20,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/tv_current_price"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorPrimary"/>
 
         <TextView
             android:id="@+id/tv_current_price"
@@ -34,7 +38,7 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/txtOneHour"
+            android:id="@+id/txt_one_Hour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"

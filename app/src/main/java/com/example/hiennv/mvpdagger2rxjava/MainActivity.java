@@ -3,6 +3,8 @@ package com.example.hiennv.mvpdagger2rxjava;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -62,7 +64,10 @@ public class MainActivity extends AppCompatActivity implements CryptoAdapter.OnC
                 .mainMvpModule(new MainMvpModule(this))
                 .build();
         mainActivityComponent.injectMainActivity(this);
-
+        rvCrypto.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        rvCrypto.setItemAnimator(new DefaultItemAnimator());
+        rvCrypto.setHasFixedSize(true);
+        rvCrypto.setAdapter(cryptoAdapter);
         mainPresenter.loadData();
     }
 

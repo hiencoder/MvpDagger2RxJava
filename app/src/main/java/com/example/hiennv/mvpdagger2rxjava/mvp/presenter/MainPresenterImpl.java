@@ -38,16 +38,20 @@ public class MainPresenterImpl implements MainContract.PresenterCallBack {
                     @Override
                     public void onCompleted() {
                         Log.i(TAG, "onCompleted: ");
+                        mainView.showSuccess();
+                        mainView.hideProgress();
                     }
 
                     @Override
                     public void onError(Throwable e) {
                         LogUtil.e(TAG, e.getMessage());
                         mainView.hideProgress();
+                        mainView.showError(e.getMessage());
                     }
 
                     @Override
                     public void onNext(List<CryptoData> list) {
+                        LogUtil.i(TAG,list.size() + "");
                         mainView.showData(list);
                     }
                 });

@@ -6,37 +6,37 @@ import com.google.gson.annotations.SerializedName;
 public class CryptoData {
 
     @Expose
-    @SerializedName("lastupdated")
+    @SerializedName("last_updated")
     public String lastUpdated;
     @Expose
-    @SerializedName("percentchange7d")
+    @SerializedName("percent_change_7d")
     public String percentChange7d;
     @Expose
-    @SerializedName("percentchange24h")
+    @SerializedName("percent_change_24h")
     public String percentChange24h;
     @Expose
-    @SerializedName("percentchange1h")
+    @SerializedName("percent_change_1h")
     public String percentChange1h;
     @Expose
-    @SerializedName("maxsupply")
+    @SerializedName("max_supply")
     public String maxSupply;
     @Expose
-    @SerializedName("totalsupply")
+    @SerializedName("total_supply")
     public String totalSupply;
     @Expose
-    @SerializedName("availablesupply")
+    @SerializedName("available_supply")
     public String availableSupply;
     @Expose
-    @SerializedName("marketcapusd")
+    @SerializedName("market_cap_usd")
     public String marketCapUsd;
     @Expose
-    @SerializedName("24hvolumeusd")
+    @SerializedName("24h_volume_usd")
     public String volumeUsd;
     @Expose
-    @SerializedName("pricebtc")
+    @SerializedName("price_btc")
     public String priceBtc;
     @Expose
-    @SerializedName("priceusd")
+    @SerializedName("price_usd")
     public String priceUsd;
     @Expose
     @SerializedName("rank")

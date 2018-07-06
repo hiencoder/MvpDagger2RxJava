@@ -74,9 +74,9 @@ public class CryptoAdapter extends RecyclerView.Adapter<CryptoAdapter.CryptoHold
         }
 
         public void bindCrypto(CryptoData cryptoData){
-            tvOneHourChange.setText(cryptoData.percentChange1h + "%");
-            tv7DayChange.setText(cryptoData.percentChange7d + "%");
-            tv24HourChange.setText(cryptoData.percentChange24h + "%");
+            tvOneHourChange.setText(cryptoData.percentChange1h + " %");
+            tv7DayChange.setText(cryptoData.percentChange7d + " %");
+            tv24HourChange.setText(cryptoData.percentChange24h + " %");
             tvCoin.setText(cryptoData.symbol);
             tvCurrentPrice.setText(cryptoData.priceUsd);
         }
